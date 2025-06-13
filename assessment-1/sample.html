@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Card</title>
+    <style>
+        .card {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            background: gray;
+            text-align: center;
+            font-size: 14px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }    
+
+        .image-section {
+            display: none;
+        }
+
+        .card-content {
+            padding: 24px;
+        }
+        @media (min-width: 600px) {
+            .card {
+                width: 80%;
+                font-size: 16px;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+                border-radius: 6px;
+            }
+
+            .card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+            }
+        }
+
+        @media (min-width: 900px) {
+            .card {
+                display: flex;
+                width: 70%;
+                font-size: 18px;
+                border-radius: 10px;
+                text-align: left;
+            }
+
+            .image-section {
+                display: block;
+                width: 30%;
+                min-width: 180px;
+                background: #e0e0e0;
+            }
+
+            .image-section img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+            .card-content {
+                width: 70%;
+                padding: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="image-section">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.MCLzVoExgXPyNi_V5gb1AwHaE7&pid=Api&P=0&h=180" alt="Image">
+        </div>
+        <div class="card-content">
+            <h2>season</h2>
+            <p>
+                nature love
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
